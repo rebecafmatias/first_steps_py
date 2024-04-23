@@ -1,4 +1,4 @@
-# first_steps_py
+# Set Up inicial
 
 ## Configurando Pyenv
 
@@ -66,10 +66,60 @@ Agora é só fechar o PowerShell e abrir o Git Bash e rodar:
 
 ``pyenv --version``
 
+Nisso de novo pode dar muito certo ou errado ;(
+Mas calma, vamos resolver se tiver dado erro:
+
+**Deu certo?**
+
 E então o git vai retornar a versão de pyenv que temos na nossa máquina:
 
 ![alt text](image-6.png)
 
+**Deu errado?**
+
+Provavelmente apareceu algum erro na sua tela referente as variáveis de ambiente, certo?
+
+Então vamos configurá-las:
+
+a. Primeiro passo é abrir as variáveis de ambiente na sua máquina: 
+
+![alt text](image-15.png)
+
+![alt text](image-20.png)
+
+![alt text](image-17.png)
+
+b. Agora vamos adicionar todas as variáveis que não estão configuradas:
+
+- Vamos entrar no gerenciador de arquivos e nos direcionar para a pasta do pyenv 
+
+![alt text](image-18.png)
+
+- Vamos localizar dentro da pasta de pyenv a pasta pyenv-win e copiar o endereço dela.
+
+![alt text](image-19.png)
+
+- No editor de variáveis de ambiente que vimos acima vamos em NOVO para adicionar esse endereço que copiamos a 3 variáveis:
+
+![alt text](image-21.png)
+
+![alt text](image-22.png)
+
+![alt text](image-23.png)
+
+- Além disso preciso adicionar dois PATHS:
+
+![alt text](image-24.png)
+
+![alt text](image-25.png)
+
+_ps: precisa mover esses dois paths adicionados para cima conforme está na imagem_
+
+**PRONTINHO**
+
+Agora podemos voltar e fazer o teste:
+
+``pyenv --version``
 
 ### 2. Configurando diferentes versões de python para cada projeto!
 
@@ -125,4 +175,4 @@ Rodo o seguinte script para definir a versão python para essa pasta:
 
 E boa!! agora você tem uma versão diferente da sua versão de python global no seu projeto!
 
-![alt text](image-14.png)
+![alt text](image-14.png) 
